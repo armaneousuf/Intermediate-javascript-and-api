@@ -10,5 +10,5 @@ const numbers = [5, 10, 15, 20, 25];
 // - 15 is at index 2, so print 15 × 2 = 30
 // - etc.
 
-const result = numbers.map((x, y) => x * y);
+const result = numbers.map((num, i) => num * i); //.reduce((a, b) => a+b, 0) will add the total sum 
 console.log(result); 
