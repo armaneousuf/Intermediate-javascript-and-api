@@ -7,4 +7,4 @@ function processUser(callback) {
     callback(username);
 }
 
-processUser(greet);
+processUser(greet); // `greet` used as an argument.
