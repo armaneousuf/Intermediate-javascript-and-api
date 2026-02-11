@@ -17,3 +17,26 @@ const displayPost = (posts) => {
       container.appendChild(p);
   });
 };
+
+
+// const loadImg = () => {
+//     const url = "https://jsonplaceholder.typicode.com/photos";
+//     fetch(url)
+//         .then(res => res.json())
+//         .then(json => displayImg(json))
+//     .catch(error => console.log('error:', error))
+// }
+
+// const displayImg = (images) => {
+//     const imgContainer = document.querySelector('#image-container');
+//     imgContainer.innerHTML = '';
+
+//     images.forEach(image => {
+//         const imgEle = document.createElement('img');
+//         imgEle.src = image.url;
+//         imgEle.alt = image.title;
+//         imgEle.style.width = '150px';
+//         imgEle.style.margin = '5px';
+//         imgContainer.appendChild(imgEle);
+//     })
+// }
