@@ -13,6 +13,7 @@ const displayPost = (posts) => {
   posts.forEach((post) => {
       const p = document.createElement('p');
       p.innerText = post.title;
+      p.classList.add('post');
       container.appendChild(p);
   });
 };
