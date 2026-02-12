@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch To-do's from API</title>
+
+    <style>
+        .todo-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid #ddd;
+            margin: 5px;
+            padding: 5px;
+        }
+
+
+        .todo-card svg {
+            flex-shrink: 0;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="loadTodo()">Todo's</button>
+    <section id="todo-container"></section>
+    <script src="script.js"></script>
+</body>
+
+</html>
