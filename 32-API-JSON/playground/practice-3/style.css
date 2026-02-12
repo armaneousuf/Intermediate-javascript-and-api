@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #2d3436;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+button:first-of-type {
+  background-color: #4834d4;
+  color: white;
+}
+
+button#remove {
+  background-color: #eb4d4b;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#todo-container {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.todo-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-card:hover {
+  transform: scale(1.02);
+  background-color: #ffffff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.todo-card h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2d3436;
+  flex: 1;
+}
+
+.todo-card svg {
+  width: 20px;
+  height: 20px;
+  color: #686de0;
+  transition: color 0.3s ease;
+}
+
+.todo-card.completed h4 {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
