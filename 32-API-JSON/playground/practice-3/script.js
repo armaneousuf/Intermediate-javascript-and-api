@@ -1,3 +1,4 @@
+const todoContainer = document.getElementById('todo-container');
 const loadTodo = () => {
   const url = "https://jsonplaceholder.typicode.com/todos";
   fetch(url)
@@ -8,12 +9,10 @@ const loadTodo = () => {
 
 const displayTodo = (todos) => {
   // 1.Get the parent
-  const todoContainer = document.getElementById("todo-container");
   todoContainer.innerHTML = "";
 
   // 2. Get each items
   todos.forEach((todo) => {
-    console.log(todo);
     const todoCard = document.createElement("div");
     todoCard.innerHTML = `
         <div class="todo-card">
@@ -31,5 +30,10 @@ const displayTodo = (todos) => {
         `;
     todoContainer.appendChild(todoCard);
   });
+
 };
 
+const remove = document.getElementById("remove");
+const removeTodo = () => {
+    todoContainer.innerHTML = '';
+};
